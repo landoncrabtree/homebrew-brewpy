@@ -1,8 +1,8 @@
 class Brewpy < Formula
-  desc "🍺 BrewPy - Python Version Manager for Homebrew"
+  desc "BrewPy - Python Version Manager for Homebrew"
   homepage "https://github.com/landoncrabtree/brewpy"
-  url "https://github.com/landoncrabtree/brewpy/archive/refs/tags/v1.0.1.tar.gz"
-  sha256 "31a3b4cbfffaecdc20e39b2c5384a83171b0f2dea7700a1eea8a3d88a3e4982c"
+  url "https://github.com/landoncrabtree/brewpy/archive/refs/tags/.tar.gz"
+  sha256 "172dbbf468f2d83896081a22c4d65964cd0fa3dfda7926bfbd6da8b7d4d91d75"
   license "MIT"
 
   depends_on "go" => :build
@@ -15,16 +15,12 @@ class Brewpy < Formula
 
   def post_install
     puts <<~EOS
-      🍺 BrewPy installed successfully!
-      
-      Usage:
-        brewpy versions        # List available Python versions
-        brewpy use [version]   # Switch Python version
-        brewpy current         # Show current version
+      BrewPy installed successfully!
+      Get started by running  to see the available commands.
     EOS
   end
 
   test do
-    system "#{bin}/brewpy", "--help"
+    system "bin/brewpy", "--help"
   end
 end
