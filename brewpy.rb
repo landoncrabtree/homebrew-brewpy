@@ -1,8 +1,8 @@
 class Brewpy < Formula
   desc "BrewPy - Python Version Manager for Homebrew"
   homepage "https://github.com/landoncrabtree/brewpy"
-  url "https://github.com/landoncrabtree/brewpy/archive/refs/tags/.tar.gz"
-  sha256 "172dbbf468f2d83896081a22c4d65964cd0fa3dfda7926bfbd6da8b7d4d91d75"
+  url "https://github.com/landoncrabtree/brewpy/archive/refs/tags/v1.0.2.tar.gz"
+  sha256 "c935bcdc72be8a30c5dd1b8334c122a4a3ba05a77287e666ca5640b568a957e2"
   license "MIT"
 
   depends_on "go" => :build
